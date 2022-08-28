@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import ImageUploadContainer from "../ImageUploadContainer";
 
 const Modal = ({ onClose }) => {
   return(
@@ -7,7 +8,7 @@ const Modal = ({ onClose }) => {
     <Background onClick={onClose} />
       <ModalContentBox>
         <div className="contents">
-          내용을 적어보자
+          <ImageUploadContainer />
         </div>
       </ModalContentBox>
     </>
@@ -43,6 +44,8 @@ const ModalContentBox = styled.div`
     width: 100%;
     height: 100%;
     background-color: tomato;
+    padding: 20px;
     z-index: 3;
+
   }
 `;
